@@ -25,19 +25,51 @@ h1{
     line-height: 100px;
     height: 100px;
     aspect-ratio: 1/1;
-    background-color:rgb(255, 155, 188);
     text-align: center;
     margin: 10px;
+    background-color:rgb(255, 155, 188);
+    color: rgb(59, 59, 59);
+    font-weight: 600;
+}
+
+.box:hover{
+    animation: flutter 1s linear infinite;
 }
 
 .Fizz{
     background-color: rgb(210, 182, 255);
 }
 
+.Fizz:hover{
+    animation: flutter .5s linear infinite;
+}
+
 .Buzz{
     background-color:rgb(132, 216, 216);
 }
 
+.Buzz:hover{
+    animation: flutter .25s linear infinite;
+}
+
 .FizzBuzz{
     background-color:rgb(92, 203, 255);
+}
+
+.FizzBuzz:hover{
+    animation: flutter .1s linear infinite;
+}
+
+@keyframes flutter{
+    0% {background-color: rgb(210, 182, 255);}
+    25% {
+        background-color: rgb(255, 155, 188);
+        color: white;
+    }
+    50% {background-color: rgb(132, 216, 216);}
+    75% {
+        background-color: rgb(92, 203, 255);
+        color: white;
+    }
+    100% {background-color: rgb(210, 182, 255);}
 }
