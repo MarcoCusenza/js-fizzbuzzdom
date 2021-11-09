@@ -1,6 +1,43 @@
 *{
     background-color: rgb(59, 59, 59);
-    color: lightgray;
     font-family: 'Open Sans', sans-serif;
 }
 
+h1{
+    color: lightgray;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#grid{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    line-height: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    background-color:rgb(255, 155, 188);
+    text-align: center;
+    margin: 10px;
+}
+
+.Fizz{
+    background-color: rgb(210, 182, 255);
+}
+
+.Buzz{
+    background-color:rgb(132, 216, 216);
+}
+
+.FizzBuzz{
+    background-color:rgb(92, 203, 255);
+}
